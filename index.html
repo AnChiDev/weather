@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/solid.js" integrity="sha384-tc7MH1B8eIPGWXxQScItgwJcDhnfKKXr7R39oJJCo9oQ5QssIq6fJM9HvdSHlmUE" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/fontawesome.js" integrity="sha384-hAYe7Q//ZOaw3fT5VW5hCn+guWuzOj8+KjXlS95ZxcRnVX+SxyugquCJURnqC7UK" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anek+Odia:wght@200;300&family=Dancing+Script&family=Lora&family=Open+Sans:wght@300;400;700&family=Poppins:wght@200;500&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+<div class="search-bar">
+<i class="fas fa-search search-icon" class="weather-icon"></i>
+<input type = "text" name ="search-city" id="search-input" placeholder="Tìm kiếm thành phố">
+</div>
+<div class="info-wrapper">
+<p class="city-name">--</p>
+<p class ="weather-state"> --</p>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+<p class="temperature"></p>
+</div>
+<div class="additional-section">
+    <div class="row">
+        <div class="item">
+            <div class="label">Mặt trời mọc</div>
+            <div class="value sunrise">--</div>
+    </div>
+    <div class="item">
+        <div class="label">Mặt trời lặn</div>
+        <div class="value sunset">--</div>
+</div>
+    </div>
+    <div class="row">
+        <div class="item">
+            <div class="label">Độ ẩm</div>
+            <div class="value humidity"><span class="humidity">--</span>%</div>
+    </div>
+    <div class="item">
+        <div class="label">Tốc độ gió</div>
+        <div class="value wind-speed"><span class="wind-speed">--</span> km/h</div>
+</div>
+    </div>
+</div>    
+</div>
+        <div class="additional-section">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
